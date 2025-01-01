@@ -1,11 +1,10 @@
 <div align="center">
 
-# Latihan PHP
+# Latihan Dart
 
-![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
-
+![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)  
 ![Bahasa](https://img.shields.io/badge/Bahasa-Indonesia-blue)
-![Platform](https://img.shields.io/badge/Platform-Built_in_Server-%23777BB4)
+![Conventional Commits](https://img.shields.io/badge/commit-conventional-blue.svg)
 
 </div>
 
@@ -43,7 +42,7 @@ Semua file Dart ditempatkan di direktori sesuai dengan levelnya, masing-masing b
 
 ## Kontribusi
 
-Jika Baginda ingin menambahkan latihan atau memperbaiki penjelasan, silakan buat **Pull Request**. Saya akan dengan senang hati melakukan review.
+Jika Anda ingin menambahkan latihan atau memperbaiki penjelasan, silakan buat **Pull Request**. Saya akan dengan senang hati melakukan review.
 
 ## Lisensi
 
