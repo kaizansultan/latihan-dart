@@ -1,5 +1,5 @@
-/* 
-Dart adalah bahasa yang benar-benar object-oriented. Jadi fungsi merupakan 
+/*
+Dart adalah bahasa yang benar-benar object-oriented. Jadi fungsi merupakan
 objek dan memiliki `type`.
 
 Fungsi bisa:
@@ -45,6 +45,8 @@ void sapaPagi(String nama, [String pesan = 'Selamat pagi']) {
   print('$pesan $nama');
 }
 
+kosong() {}
+
 void main() {
   sapaOrang(nama: 'Mauza', isBerbatang: true);
   sapaOrang(nama: 'Eveline');
@@ -54,4 +56,36 @@ void main() {
 
   sapaPagi('Kaizan');
   sapaPagi('Kaizan', 'Good morning');
+
+  // --- anonymous function
+  /// Anonymous function sebagai argumen. Dalam contoh dibawah, anonymous func
+  /// berperan sebaagi argumen dan `map()`.
+  var numbers = [1, 2, 3, 4, 5];
+  var kuadrat = numbers.map((number) => number * number).toList();
+
+  /// Bisa juga tidak menggunakan arrow.
+  var kaliDua = numbers.map((number) {
+    return number * 2;
+  }).toList();
+  print(kuadrat);
+  print(kaliDua);
+
+  /// Bisa juga disimpan ke dalam variabel.
+  // ignore: prefer_function_declarations_over_variables
+  var salam = ([String nama = 'Fulan']) {
+    return 'Assalamu\'alaikum $nama';
+  };
+  print(salam('Mauza'));
+  /*
+    Kapan Menggunakan Anonymous Function?
+    - Callback: Ketika fungsi hanya digunakan sebagai argumen untuk operasi
+      sekali pakai.
+    - Inline Operation: Untuk menyederhanakan kode dengan mendeklarasikan
+      logika langsung di tempatnya.
+    - Dynamic Behavior: Ketika fungsi diperlukan untuk digunakan secara dinamis
+      tanpa memerlukan deklarasi nama.
+  */
+
+  // Semua function mengembalikan nilai, jika tidak ada return, kembalikan null
+  print(kosong());
 }
